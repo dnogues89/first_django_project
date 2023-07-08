@@ -1,0 +1,63 @@
+{% extends 'Whatapp/base.html' %}
+{% load static %}
+{% block content %}
+
+<!-- Banner -->
+<!-- Note: The "styleN" class below should match that of the header element. -->
+	<section id="banner" class="style2">
+		<div class="inner">
+			<span class="image">
+				<img src="images/pic07.jpg" alt="" />
+			</span>
+			<header class="major">
+				<h1>Services</h1>
+			</header>
+			<div class="inner">
+				<p>Our comprehensive range of services includes designing and developing custom WhatsApp bots to automate customer interactions, streamline communication processes, and enhance overall business efficiency. From personalized welcome messages and customer categorization to seamless information delivery, database storage, and CRM lead generation, our solutions empower businesses to deliver exceptional customer experiences. Experience the power of automation and optimize your customer engagement with our tailored WhatsApp bot services.</p>
+			</div>
+		</div>
+	</section>
+
+<!-- Mis servicios -->
+<div id="main">
+	<section id='three' class="spotlights">
+{% for service in services %}
+
+	<section>
+		<a href="generic.html" class="image">
+			<img src="{{service.image.url}}" width='150' height="900" data-position="center center" />
+		</a>
+		<div class="content">
+			<div class="inner">
+				<header class="major">
+					<h3>{{service.title}}</h3>
+				</header>
+				<p>{{service.content}}</p>
+				<ul class="actions">
+					<li><a href="https://wa.me/{{service.try_it_numb}}" class="button">Try it</a></li>
+				</ul>
+			</div>
+		</div>
+	</section>
+
+
+{% endfor %}
+	</section>
+</div>
+	<div id="main">
+		<!-- Three -->
+        <section id="three">
+            <div class="inner">
+                <header class="major">
+                    <h2>Embrace a New Way to Connect</h2>
+                </header>
+                <p>We invite you to explore our wide range of services and discover how our expertise can benefit your business. Whether you're looking to automate customer interactions, streamline communication processes, or enhance overall efficiency, our customized WhatsApp bot solutions are designed to cater to your specific needs. Don't miss out on the opportunity to provide exceptional customer experiences and drive growth. Contact us today to learn more about our services and how we can assist you.</p>
+                <ul class="actions">
+                    <li><a href="{% url 'Landing' %}" class="button next">Evolve NOW</a></li>
+                </ul>
+            </div>
+        </section>
+
+	</div>
+
+	{% endblock %}

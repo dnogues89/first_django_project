@@ -1,0 +1,111 @@
+{% extends 'Whatapp/base.html' %}
+{% load static %}
+{% block content %}
+
+<!-- Bloque -->
+	<div id="main">
+			<!-- Banner -->
+			<section id="banner" class="major">
+				<div class="inner">
+					<header class="major">
+						<h1>Hi, my name is Damian</h1>
+					</header>
+					<div class="content">
+						<p>Im a Whatsapp Bot developer<br />
+						I specialize in creating automated conversational experiences with Whatsapp API.</p>
+						<ul class="actions">
+							<li><a href="#one" class="button next scrolly">Sneek Peek</a></li>
+						</ul>
+					</div>
+				</div>
+			</section>			
+		<!-- One -->
+			<section id="one" class="tiles">
+				<article>
+					<span class="image">
+						<img src="images/pic01.jpg" alt="" />
+					</span>
+					<header class="major">
+						<h3><a href="{% url 'Services' %}" class="link">Car Seller</a></h3>
+						<p>Lineal conversation to get client data</p>
+					</header>
+				</article>
+				<article>
+					<span class="image">
+						<img src="images/pic02.jpg" alt="" />
+					</span>
+					<header class="major">
+						<h3><a href="{% url 'Services' %}" class="link">IA Bot</a></h3>
+						<p>Make a conversation with GPT 4 to filter prospects </p>
+					</header>
+				</article>
+			</section>
+
+		<!-- Two -->
+			<section id="two">
+				<div class="inner">
+					<header class="major">
+						<h2>Summary</h2>
+					</header>
+					<p>As a WhatsApp bot developer, I enable businesses to automate conversations, provide instant responses, and enhance customer experiences on the WhatsApp platform. By harnessing the power of chatbots, I streamline communication and empower businesses to deliver efficient and personalized services, resulting in increased customer satisfaction and operational efficiency.</p>
+					<ul class="actions">
+						<li><a href="{% url 'Landing'%}" class="button next">Get Started</a></li>
+					</ul>
+				</div>
+			</section>
+
+	</div>
+
+<!-- Contact -->
+	<section id="contact">
+		<div class="inner">
+			<section>
+				<form method="post" action="#">
+					<div class="fields">
+						<div class="field half">
+							<label for="name">Name</label>
+							<input type="text" name="name" id="name" />
+						</div>
+						<div class="field half">
+							<label for="email">Email</label>
+							<input type="text" name="email" id="email" />
+						</div>
+						<div class="field">
+							<label for="message">Message</label>
+							<textarea name="message" id="message" rows="6"></textarea>
+						</div>
+					</div>
+					<ul class="actions">
+						<li><input type="submit" value="Send Message" class="primary" /></li>
+						<li><input type="reset" value="Clear" /></li>
+					</ul>
+				</form>
+			</section>
+			<section class="split">
+				<section>
+					<div class="contact-method">
+						<span class="icon solid alt fa-envelope"></span>
+						<h3>Email</h3>
+						<a href="mailto:damiannogues@gmail.com">damiannogues@gmail.com</a>
+					</div>
+				</section>
+				<section>
+					<div class="contact-method">
+						<span class="icon solid alt fa-phone"></span>
+						<h3>Phone</h3>
+						<a  href="https://wa.me/5491166531292" target="_blank">(549) 11-6653-1292</a>
+					</div>
+				</section>
+				<section>
+					<div class="contact-method">
+						<span class="icon solid alt fa-home"></span>
+						<h3>Address</h3>
+						<span>Vicente Lopez<br />
+						Buenos Aires<br />
+						Argentina</span>
+					</div>
+				</section>
+			</section>
+		</div>
+</section>
+{% endblock %}
