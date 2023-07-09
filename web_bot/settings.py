@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'WhatApp',
     'ServiciosBot',
     'blog',
+    'contacto',
 ]
 
 MIDDLEWARE = [

@@ -1,0 +1,46 @@
+{% extends 'Whatapp/base.html' %}
+{% load static %}
+{% block content %}
+<!-- Contact -->
+<section id="contact">
+	<div class="inner">
+        <section>
+            <form action="" method="POST">
+				{% csrf_token %}
+                <p>{{my_form}}</p>
+                
+                <ul class="actions">
+                    <li><input type="submit" value="Send Message" class="primary" /></li>
+                    <li><input type="reset" value="Clear" /></li>
+                </ul>
+            </form> 
+        </section>
+        <section class="split">
+			<section>
+				<div class="contact-method">
+					<span class="icon solid alt fa-envelope"></span>
+					<h3>Email</h3>
+					<a href="mailto:botdeveloper@techie.com">botdeveloper@techie.com</a>
+				</div>
+			</section>
+			<section>
+				<div class="contact-method">
+					<span class="icon solid alt fa-phone"></span>
+					<h3>Phone</h3>
+					<a  href="https://wa.me/5491166531292" target="_blank">(549) 11-6653-1292</a>
+				</div>
+			</section>
+			<section>
+				<div class="contact-method">
+					<span class="icon solid alt fa-home"></span>
+					<h3>Address</h3>
+					<span>Vicente Lopez<br />
+					Buenos Aires<br />
+					Argentina</span>
+				</div>
+			</section>
+		</section>
+    </div>
+</section>
+
+{% endblock %}

@@ -22,5 +22,6 @@ urlpatterns = [
     path('',include('WhatApp.urls')),
     path('services/',include('ServiciosBot.urls')),
     path('blog/',include('blog.urls')),
+    path('contacto/',include('contacto.urls')),
     
 ]
