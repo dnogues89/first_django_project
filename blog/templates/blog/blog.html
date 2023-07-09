@@ -52,7 +52,7 @@
 		Categories: 
 		{% for post in posts %}
 
-			{% for categoria in post.categorias.all %}
+			{% for categoria in post.categorias.all.distinct %}
 
 				<a href="{% url 'Categories' categoria.id %}">{{categoria.name}}</a> /
 
