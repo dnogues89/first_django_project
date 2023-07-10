@@ -73,7 +73,6 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'web_bot.wsgi.application'
 
 
 # Database
@@ -139,4 +138,3 @@ EMAIL_PORT=587
 EMAIL_HOST_USER=mail['user']
 EMAIL_HOST_PASSWORD = mail['password']
 
-print(EMAIL_HOST_USER,EMAIL_HOST_PASSWORD)
