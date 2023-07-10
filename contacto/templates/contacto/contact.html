@@ -3,6 +3,8 @@
         <section>
 			{% if "valid" in request.GET %}
 				<p>Message delivered</p>
+			{% elif "not_valid" in request.GET%}
+				<p>Message NOT delivered. Please try again Later</p>
 			{% endif %}
             <form action="" method="POST">
 				{% csrf_token %}
