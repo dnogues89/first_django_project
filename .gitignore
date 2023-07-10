@@ -1,2 +1,2 @@
 .web_bot/settings.py
-credentials.py
+web_bot/credentials.py
