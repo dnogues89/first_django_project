@@ -23,5 +23,6 @@ urlpatterns = [
     path('services/',include('ServiciosBot.urls')),
     path('blog/',include('blog.urls')),
     path('contacto/',include('contacto.urls')),
+    path('store/',include('store.urls')),
     
 ]
